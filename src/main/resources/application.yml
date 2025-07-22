@@ -1,0 +1,31 @@
+server:
+  port: 8093
+
+master:
+  user:
+    name: 
+    email: 
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/healthcare?createDatabaseIfNotExist=True
+    username: root
+    password: 
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: 
+    password: 
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
